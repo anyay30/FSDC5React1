@@ -1,0 +1,34 @@
+/* body{
+    background-color: #f6dede;
+}
+h1,p{
+    background-color: rgb(242, 189, 189);
+    color: rgb(234, 123, 123);
+}
+.heading{
+    font-family:sans-serif;
+} */
+ div~p{
+    background-color: red;
+ }
+ p:hover{
+    background-color:pink;
+    font-size:xx-large;
+ }
+ p:after{
+    content:" react developer";
+    color:green;
+ }
+ p:before{
+    content:"learning ";
+    background-color: blue;
+ }
+ p::selection{
+    background-color: rgb(215, 213, 59);
+ }
+ p:nth-child(2){
+    background-color: brown;
+ }
+ div p:nth-of-type(1){
+    background-color: white;
+ }
