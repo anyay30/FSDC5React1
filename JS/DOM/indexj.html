@@ -1,0 +1,68 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+     function getData(){
+        const myName=document.getElementById("username").value;
+        alert("hello"+myName);
+document.getElementById('disp').innerHTML=`<h2 style="color:white;background-color:black">${myName}
+</h2>`;
+     }
+ </script>
+</head>
+<body>
+    <label>Enter name:</label><input type="text"  id="username" placeholder="enter name">
+    <button onclick="getData()">Get data</button>
+    <br>
+    <div id="disp"></div>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+     function getData(){
+        const myName = document.getElementById("username").value;
+        const myBranch = document.getElementById("branch").value;
+        const mySection = document.getElementById("section").value;
+
+        alert("Hello " + myName + " from " + myBranch+"section"+mySection);
+
+        document.getElementById('disp').innerHTML =
+            `<h2 style="color:pink;background-color:black">
+                Name: ${myName} <br>
+                Branch: ${myBranch}<br>
+                Section:${mySection}
+            </h2>`;
+     }
+ </script>
+</head>
+<body>
+    <label>Enter name:</label>
+    <input type="text" id="username" placeholder="Enter name">
+    <br><br>
+
+    <label>Enter branch:</label>
+    <input type="text" id="branch" placeholder="Enter branch">
+    <br><br>
+    
+     <label>Enter section:</label>
+    <input type="text" id="section" placeholder="Enter section">
+    <br><br>
+
+     <label>Enter College:</label>
+    <input type="text" id="college" placeholder="Enter branch">
+    <br><br>
+
+    <button onclick="getData()">Get data</button>
+    <br><br>
+
+    <div id="disp"></div>
+</body>
+</html>
